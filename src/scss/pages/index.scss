@@ -1,0 +1,73 @@
+.page-content {
+    padding-top: 60px;
+    background: radial-gradient(100% 100% at 50.76% 0%, rgb(57, 205, 131) 0%, rgb(16, 22, 31) 62.7472460269928%);
+    
+    .hero {
+        margin-top: 100px;
+        
+        .container {
+            .hero__start-block {
+                display: flex;
+                align-items: flex-start;
+                width: 100%;
+                max-width: 800px;
+                margin: 0 auto;
+                
+                .hero__battery {
+                    img {
+                        width: 100%;
+                    }
+                }
+                
+                .hero__titles {
+                    margin-top: 80px;
+                    margin-left: 20px;
+                    
+                    h1 {
+                        font-weight: 800;
+                        font-size: 96px;
+                        color: #fff;
+                        
+                        &.battery {
+                            font-size: 124px;
+                            color: #39cd83;
+                        }
+                    }
+                }
+            }
+            
+            .hero__text {
+                p {
+                    max-width: 440px;
+                    margin: auto;
+                    font-weight: 500;
+                    font-size: 20px;
+                    text-align: center;
+                    color: #8994a3;
+                }
+            }
+
+            .hero__buttons {
+                margin-top: 44px;
+                display: flex;
+                justify-content: center;
+
+                a {
+                    &:not(:first-child) {
+                        margin-left: 15px;
+                    }
+
+                    button {
+                        padding: 16px 57px;
+                        border: none;
+                        border-radius: 100px;
+                        background: #fff;
+                        font-weight: 700;
+                        font-size: 20px;
+                        color: #10161f;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,7 +1,28 @@
 extends layout/_layout
 block vars
-  - var pageName = 'index.pug'
+  - var pageName = 'Tonkeeper Battery'
 
 block content
   .page-content
-    section.main
+    section.hero
+      .container
+      
+        .hero__start-block
+          .hero__battery
+            img(src="@img/hero/battery.png", alt="Tonkeeper battery logo")
+          .hero__titles
+            h1 Tonkeeper
+            h1.battery battery
+
+        .hero__text
+          p Tonkeeper Battery removes an obstacle for newcomers
+        
+        .hero__buttons
+          a(href="#")
+            button Send Tokens
+          a(href="#")
+            button Swap
+          a(href="#")
+            button Send NFTs
+          a(href="#")
+            button Unstake TON

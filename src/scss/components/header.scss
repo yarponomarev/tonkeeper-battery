@@ -1,0 +1,25 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    .container {
+        margin-top: 40px;
+        .header__nav {
+            display: flex;
+            justify-content: center;
+            .nav__item {
+                &:not(:first-child) {
+                    margin-left: 38px;
+                }
+                .nav__link {
+                    color: #fff;
+                    &:hover {
+                        color: #ddd;
+                    }
+                }
+            }
+        }
+    }
+}
