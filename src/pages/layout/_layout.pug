@@ -1,0 +1,16 @@
+doctype html
+html(lang="ru")
+	block vars
+	include ../includes/_head
+
+	body(class= bodyClass)
+		include ../includes/_header
+			
+		block content
+			
+
+			
+		if !footer
+			include ../includes/_footer
+			script(src="js/app.min.js")
+			script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
