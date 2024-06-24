@@ -1,10 +1,11 @@
 .page-content {
-    padding-top: 60px;
-    background: radial-gradient(100% 100% at 50.76% 0%, rgb(57, 205, 131) 0%, rgb(16, 22, 31) 62.7472460269928%);
-    
+    background-color: #10161F;
+
     .hero {
-        margin-top: 100px;
-        
+        padding-top: 100px;
+        background: radial-gradient(100% 100% at 50.76% 0%, rgb(57, 205, 131) 0%, rgb(16, 22, 31) 62.7472460269928%);
+        min-height: 60vh;
+    
         .container {
             .hero__start-block {
                 display: flex;
@@ -46,17 +47,17 @@
                     color: #8994a3;
                 }
             }
-
+    
             .hero__buttons {
                 margin-top: 44px;
                 display: flex;
                 justify-content: center;
-
+    
                 a {
                     &:not(:first-child) {
                         margin-left: 15px;
                     }
-
+    
                     button {
                         padding: 16px 57px;
                         border: none;
@@ -66,6 +67,62 @@
                         font-size: 20px;
                         color: #10161f;
                     }
+                }
+            }
+        }
+    }
+    
+    .main__hr {
+        margin-top: 50px;
+        width: 700px;
+        color: linear-gradient(90deg,transparent,#1d2633 50%,transparent);
+    }
+    
+    .howitwork {
+        margin-top: 40px;
+    
+        .container {
+            h2 {
+                font-weight: 700;
+                font-size: 44px;
+                text-align: center;
+                color: #fff;
+            }
+    
+            .work__wrapper {
+                margin-top: 40px;
+    
+                .work__item {
+                    display: flex;
+                    height: 300px;
+    
+                    .work__img {
+                        background-color: #fff;
+                        border-radius: 50px 0 0 50px;
+    
+                        img {
+                            padding: 45px 64px 0 60px;
+                        }
+                    }
+                    .work__text {
+                        background-color: #1D2633;
+                        border-radius: 0 50px 50px 0;
+                        padding: 54px 88px 54px 54px;
+    
+                        p {
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 1.2;
+                            color: #8994a3;
+                        }
+                    }
+                }
+    
+                .work__item-line {
+                    background-color:#fff;
+                    width: 15px;
+                    height: 70px;
+                    margin-left: 170px;
                 }
             }
         }
