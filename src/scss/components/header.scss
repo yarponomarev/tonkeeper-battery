@@ -16,10 +16,14 @@ header {
                 &:not(:first-child) {
                     margin-left: 38px;
                 }
+
                 .nav__link {
                     color: #fff;
+                    transition: all 0.5s ease;
+
                     &:hover {
-                        color: #ddd;
+                        opacity: 0.5;
+                        transition: all 0.5s ease;
                     }
                 }
             }
