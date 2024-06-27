@@ -66,12 +66,6 @@
                         font-weight: 700;
                         font-size: 20px;
                         color: #10161f;
-                        transition: all 0.5s ease;
-
-                        &:hover {
-                            opacity: 0.8;
-                            transition: all 0.5s ease;
-                        }
                     }
                 }
             }
@@ -80,8 +74,10 @@
     
     .main__hr {
         margin-top: 50px;
-        width: 700px;
-        color: linear-gradient(90deg,transparent,#1d2633 50%,transparent);
+        display: flex;
+        height: 1px;
+        padding: 0 24px;
+        background: linear-gradient(90deg,transparent,#1d2633 50%,transparent)
     }
     
     .howitwork {
@@ -155,6 +151,56 @@
                             padding: 45px 64px 0 60px;
                         }
                     }
+
+                    .battery {
+                        display: flex;
+                        flex-direction: column;
+                        padding-top: 60px;
+                        padding-left: 20px;
+
+                        .battery__wrap {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: row;
+                            position: relative;
+                            margin-bottom: 28px;
+
+                            &:before {
+                                width: calc(100% - 130px);
+                                bottom: -28px;
+                                background-color: #1c6341;
+                            }
+
+                            &:after {
+                                width: calc(100% - 70px);
+                                bottom: -16px;
+                                background-color: #298d5d;
+                            }
+                            
+                            &:after, &:before {
+                                height: 100%;
+                                position: absolute;
+                                content: "";
+                                border-radius: 24px;
+                                z-index: 0;
+                            }
+
+                            .label {
+                                flex: 1 1;
+                                z-index: 1;
+                                font-size: 52px;
+                                font-weight: 700;
+                                line-height: 64px;
+                                flex-direction: row;
+                                text-align: center;
+                                padding: 20px 21px 28px;
+                                border-radius: 24px;
+                                color: #fff;
+                                background: linear-gradient(0deg,#39CD83,#298d5d);;
+                            }
+                        }
+                    }
                     
                     .work__text {
                         background-color: #1D2633;
@@ -205,25 +251,18 @@
                 display: flex;
                 justify-content: center;
 
-                a {
+                .link__item {
                     background-color: #fff;
                     padding: 16px 22px;
                     border-radius: 100px;
                     display: flex;
                     align-items: center;
-                    transition: all 0.5s ease;
 
                     &:not(:first-child) {
                         margin-left: 16px;
                     }
 
-                    &:hover {
-                        opacity: 0.8;
-                        transition: all 0.5s ease;
-                    }
-
                     img {
-
                         &.ios {
                             padding-bottom: 5px;
                         }
@@ -231,10 +270,74 @@
                             margin-left: 8px;
                         }
                     }
+
                     span {
                         margin-left: 10px;
                         font-weight: 500;
                         font-size: 20px;
+                    }
+                }
+
+                .dropdown__link {
+                    position: relative;
+                    display: inline-block;
+                    margin-left: 16px;
+                    background-color: #fff;
+                    border-radius: 100px;
+                    padding: 16px 22px;
+                    cursor: pointer;
+
+                    &:hover {
+                        .dropdown__content {
+                            display: block;
+                        }
+                    }
+
+                    a {
+                        display: flex;
+                        align-items: center;
+
+                        span {
+                            margin-left: 10px;
+                            font-weight: 500;
+                            font-size: 20px;
+                        }
+
+                        img {
+                            &.arrow {
+                                margin-left: 8px;
+                            }
+                        }
+                    }
+
+                    .dropdown__content {
+                        display: none;
+                        margin-top: 17px;
+                        width: 100%;
+                        position: absolute;
+                        left: 0;
+                        padding-top: 8px;
+                        z-index: 1;
+
+                        .dropdown__content-wrap {
+                            background-color: #1d2633;
+                            border-radius: 14px;
+                            width: 100%;
+                            padding: 16px 22px;
+
+                            a {
+                                display: flex;
+                                align-items: center;
+                                padding: 10px 5px;
+    
+                                span {
+                                    margin-left: 10px;
+                                    font-weight: 500;
+                                    font-size: 20px;
+                                    color: #fff;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -244,7 +347,9 @@
 
                 h3 {
                     text-align: center;
-                    color: #fff;
+                    font-weight: 500;
+                    font-size: 20px;
+                    color: #8994a3;
                 }
 
                 .extensions__links {
@@ -259,15 +364,9 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        transition: all 0.5s ease;
 
                         &:not(:first-child) {
                             margin-left: 12px;
-                        }
-
-                        &:hover {
-                            opacity: 0.8;
-                            transition: all 0.5s ease;
                         }
                     }
                 }

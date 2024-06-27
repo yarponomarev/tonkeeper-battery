@@ -9,7 +9,7 @@ block content
       .container
         .hero__start-block
           .hero__battery
-            img(src="@img/hero/battery.png", alt="Tonkeeper battery logo")
+            img(src="@img/svg/battery.svg", alt="Tonkeeper battery logo")
           .hero__titles
             h1 Tonkeeper
             h1.battery battery
@@ -27,7 +27,7 @@ block content
           a(href="#unstake")
             button Unstake TON
 
-    hr.main__hr
+    .main__hr
 
     section.howitwork
       .container
@@ -48,7 +48,7 @@ block content
 
           .work__item.small-right#swap
             .work__text
-              p You can get a stablecoin or an NFT and use them right away without acquiring native coins to pay for gas. You won’t need to go to an exchange, pass KYC checks, enter a lot of details only to buy a random amount of coins you did not think you needed.
+              p You can get a stablecoin or an NFT and use them right away without acquiring native coins to pay for gas. You won't need to go to an exchange, pass KYC checks, enter a lot of details only to buy a random amount of coins you did not think you needed.
             
             .work__img
               img(src="@img/svg/work-swap.svg", alt="Send Tokens image")
@@ -56,8 +56,10 @@ block content
           .work__line.right
 
           .work__item.small-left#nft
-            .work__img
-              img(src="@img/howitwork/work-nft.png", alt="Send Tokens image")
+
+            .battery
+              .battery__wrap
+                .label battery.ton
 
             .work__text
               p You can charge the battery with one tap using in-app purchases, or with TON or stablecoins. Send a few dollars worth of stablecoins or TON to a special address: battery.ton and it will automatically apply charges to your account.
@@ -77,20 +79,30 @@ block content
       .container
         p Download Tonkeeper and enjoy all the benefits of using a battery today...
         .download__links
-          a(href="#")
+          a.link__item(href="#")
             img.ios(src="@img/svg/download/ios.svg", alt="iOS logo")
             span Tonkeeper iOS
           
-          a(href="#")
-            img(src="@img/svg/download/android.svg", alt="Android logo")
-            span Tonkeeper Android
-            img.arrow(src="@img/svg/download/arrow.svg", alt="Arrow image")
+          .dropdown__link
+            a(href="#")
+              img(src="@img/svg/download/android.svg", alt="Android logo")
+              span Tonkeeper Android
+              img.arrow(src="@img/svg/download/arrow.svg", alt="Arrow image")
+
+            .dropdown__content
+              .dropdown__content-wrap
+                a(href="#") 
+                  img(src="@img/svg/download/android-white.svg", alt="Android logo")
+                  span Google Play
+                a(href="#") 
+                  img(src="@img/svg/download/download.svg", alt="Download APK logo")
+                  span Download APK
           
-          a(href="#")
+          a.link__item(href="#")
             img(src="@img/svg/download/pc.svg", alt="PC logo")
             span Tonkeeper Pro
           
-          a(href="#")
+          a.link__item(href="#")
             img(src="@img/svg/download/telegram.svg", alt="Telegram logo")
             span In Telegram
         
@@ -113,4 +125,4 @@ block content
             a(href="#") 
               img(src="@img/svg/extensions/edge.svg", alt="Google logo")
 
-    hr.main__hr
+    .main__hr
