@@ -109,7 +109,7 @@
 
                         .work__img {
                             background-color: #fff;
-                            border-radius: 0 50px 50px 0;
+                            border-radius: 0 44px 44px 0;
     
                             img {
                                 padding: 65px 64px 0 60px;
@@ -117,7 +117,7 @@
                         }
 
                         .work__text {
-                            border-radius: 50px 0 0 50px;
+                            border-radius: 44px 0 0 44px;
 
                             p {
                                 line-height: 1.4;
@@ -128,7 +128,7 @@
                     &.small-left {
                         height: 230px;
                         background-color: #1D2633;
-                        border-radius: 50px;
+                        border-radius: 44px;
 
                         .work__img {
                             background-color: transparent;
@@ -149,15 +149,16 @@
     
                     .work__img {
                         background-color: #fff;
-                        border-radius: 50px 0 0 50px;
+                        border-radius: 44px 0 0 44px;
     
                         img {
                             padding: 45px 64px 0 60px;
                         }
                     }
+                    
                     .work__text {
                         background-color: #1D2633;
-                        border-radius: 0 50px 50px 0;
+                        border-radius: 0 44px 44px 0;
                         padding: 54px 88px 54px 54px;
 
                         p {
@@ -210,9 +211,15 @@
                     border-radius: 100px;
                     display: flex;
                     align-items: center;
+                    transition: all 0.5s ease;
 
                     &:not(:first-child) {
                         margin-left: 16px;
+                    }
+
+                    &:hover {
+                        opacity: 0.8;
+                        transition: all 0.5s ease;
                     }
 
                     img {
@@ -234,7 +241,6 @@
 
             .download__extensions {
                 margin-top: 50px;
-                margin-bottom: 100px;
 
                 h3 {
                     text-align: center;
@@ -253,9 +259,15 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        transition: all 0.5s ease;
 
                         &:not(:first-child) {
                             margin-left: 12px;
+                        }
+
+                        &:hover {
+                            opacity: 0.8;
+                            transition: all 0.5s ease;
                         }
                     }
                 }
