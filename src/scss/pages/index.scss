@@ -87,10 +87,6 @@
                     justify-content: left;
                     max-width: 350px;
                     margin: auto;
-
-                    @media (max-width: 400px) {
-                        justify-content: space-between;
-                    }
                 }
     
                 .button__link {
@@ -107,11 +103,7 @@
                         width: 240px;
 
                         @media (max-width: $screenM) {
-                            margin-right: 5px;   
-                        }
-
-                        @media (max-width: 393px) {
-                            width: 210px;
+                            margin-right: 5px;
                         }
                     }
 
@@ -123,12 +115,7 @@
                         width: 165px;
 
                         @media (max-width: $screenM) {
-                            width: 150px;
                             margin-right: 5px;
-                        }
-
-                        @media (max-width: 393px) {
-                            width: 140px;
                         }
                     }
 
@@ -136,10 +123,6 @@
                         width: 270px;
 
                         @media (max-width: $screenM) {
-                            width: 190px;
-                        }
-
-                        @media (max-width: 393px) {
                             width: 170px;
                         }
                     }
@@ -196,26 +179,26 @@
                         text-align: center;
                         height: 300px;
 
-                        @media (max-width: 1280px) {
-                            height: 345px;
-                        }
-
                         @media (max-width: 1050px) {
                             border-radius: 44px 44px 0 0;
                             height: 275px;
                         }
 
+                        @media (max-width: 1280px) {
+                            height: 345px;
+                        }
+
                         img {
                             padding: 45px 64px 0 60px;
-
-                            @media (max-width: 1280px) {
-                                padding: 90px 64px 0 60px;
-                            }
 
                             @media (max-width: 1050px) {
                                 width: 180px;
                                 margin-top: 20px;
                                 padding: 0;
+                            }
+
+                            @media (max-width: 1280px) {
+                                padding: 90px 64px 0 60px;
                             }
                         }
                     }
