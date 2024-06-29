@@ -48,7 +48,7 @@
                         color: #fff;
 
                         @media (max-width: $screenM) {
-                            font-size: 44px;
+                            font-size: 40px;
                         }
 
                         .battery {
@@ -83,10 +83,8 @@
 
                 @media (max-width: $screenM) {
                     margin-top: 34px;
-                }
-
-                @media (max-width: $screenM) {
                     flex-wrap: wrap;
+                    justify-content: left;
                 }
     
                 .button__link {
@@ -101,6 +99,10 @@
 
                     &.send {
                         width: 240px;
+
+                        @media (max-width: $screenM) {
+                            margin-right: 5px;
+                        }
                     }
 
                     &.swap {
@@ -109,6 +111,10 @@
 
                     &.nft {
                         width: 165px;
+
+                        @media (max-width: $screenM) {
+                            margin-right: 5px;
+                        }
                     }
 
                     &.unstake {
@@ -127,18 +133,14 @@
 
                     &:not(:first-child) {
                         margin-left: 15px;
+
+                        @media (max-width: $screenM) {
+                            margin-left: 0;
+                        }
                     }
                 }
             }
         }
-    }
-    
-    .main__hr {
-        margin-top: 50px;
-        display: flex;
-        height: 1px;
-        padding: 0 24px;
-        background: linear-gradient(90deg,transparent,#1d2633 50%,transparent)
     }
     
     .howitwork {
@@ -162,62 +164,27 @@
     
                 .work__item-send {
                     display: flex;
-                    height: 300px;
-                    margin-top: 70px;
+                    height: auto;
+                    margin-top: 40px;
 
                     @media (max-width: $screenM) {
                         display: block;
-                        height: auto;
-                        margin-top: 200px;
                     }
 
                     .work__img {
                         background-color: #fff;
                         border-radius: 44px 0 0 44px;
-
-                        @media (max-width: $screenM) {
-                            height: 176px;
-                        }
+                        text-align: center;
+                        height: 300px;
 
                         @media (max-width: $screenM) {
                             border-radius: 44px 44px 0 0;
+                            height: 176px;
                         }
 
                         img {
-                            padding: 45px 64px 0 60px;
-
-                            &.send {
-                                @media (max-width: $screenM) {
-                                    padding: 0;
-                                    width: 111px;
-                                    margin-top: 20px;
-                                    margin-left: 140px;
-                                }
-                            }
-
-                            &.swap {
-                                @media (max-width: $screenM) {
-                                    
-                                }
-                            }
-
-                            &.nft {
-                                @media (max-width: $screenM) {
-                                    padding: 0;
-                                    width: 111px;
-                                    margin-top: 20px;
-                                    margin-left: 140px;
-                                }
-                            }
-
-                            &.unstake {
-                                @media (max-width: $screenM) {
-                                    padding: 0;
-                                    width: 111px;
-                                    margin-top: 20px;
-                                    margin-left: 140px;
-                                }
-                            }
+                            width: 111px;
+                            margin-top: 20px;
                         }
                     }
                     
@@ -246,7 +213,7 @@
 
                 .work__item-swap {
                     display: flex;
-                    height: 230px;
+                    height: auto;
                     margin-top: 70px;
 
                     @media (max-width: $screenM) {
@@ -298,10 +265,10 @@
                 .work__item-nft {
                     display: flex;
                     height: 200px;
-                    margin-top: 70px;
                     background-color: #1D2633;
                     border-radius: 44px;
-
+                    margin-top: 70px;
+                    
                     @media (max-width: $screenM) {
                         display: block;
                         height: auto;
@@ -383,7 +350,7 @@
 
                 .work__item-unstake {
                     display: flex;
-                    height: 300px;
+                    height: auto;
                     margin-top: 70px;
 
                     @media (max-width: $screenM) {
@@ -395,10 +362,8 @@
                     .work__img {
                         background-color: #fff;
                         border-radius: 44px 0 0 44px;
-
-                        @media (max-width: $screenM) {
-                            height: 176px;
-                        }
+                        height: 300px;
+                        text-align: center;
 
                         @media (max-width: $screenM) {
                             border-radius: 44px 44px 0 0;
@@ -407,37 +372,8 @@
                         img {
                             padding: 45px 64px 0 60px;
 
-                            &.send {
-                                @media (max-width: $screenM) {
-                                    padding: 0;
-                                    width: 111px;
-                                    margin-top: 20px;
-                                    margin-left: 140px;
-                                }
-                            }
-
-                            &.swap {
-                                @media (max-width: $screenM) {
-                                    
-                                }
-                            }
-
-                            &.nft {
-                                @media (max-width: $screenM) {
-                                    padding: 0;
-                                    width: 111px;
-                                    margin-top: 20px;
-                                    margin-left: 140px;
-                                }
-                            }
-
-                            &.unstake {
-                                @media (max-width: $screenM) {
-                                    padding: 0;
-                                    width: 111px;
-                                    margin-top: 20px;
-                                    margin-left: 140px;
-                                }
+                            @media (max-width: $screenM) {
+                                width: 305px;
                             }
                         }
                     }
@@ -653,5 +589,13 @@
                 }
             }
         }
+    }
+
+    .main__hr {
+        margin-top: 50px;
+        display: flex;
+        height: 1px;
+        padding: 0 24px;
+        background: linear-gradient(90deg,transparent,#1d2633 50%,transparent)
     }
 }
