@@ -23,7 +23,7 @@ block content
           .button__link.nft Send NFTs
           .button__link.unstake Unstake TON
 
-    .main__hr.
+    .main__hr
 
     section.howitwork
       .container
@@ -31,7 +31,7 @@ block content
 
         .work__wrapper
 
-          .work__item
+          .work__item-send
             .work__img
               img.send(src="@img/howitwork/work-send.png", alt="Send Tokens image")
 
@@ -39,10 +39,10 @@ block content
               p With Tonkeeper Battery you can receive tokens (stablecoins, NFTs etc.) and make payments with a token — without going to an exchange to buy coins to cover blockchain fees. Tonkeeper Battery pays your fees for you, automatically.
 
               p Update Tonkeeper on iOS and Android to version 4.3, then top up the battery in Settings → Battery. Once charged, the battery status will appear on the main screen.
-          
+
           .work__line
 
-          .work__item.small-right
+          .work__item-swap
             .work__text
               p You can get a stablecoin or an NFT and use them right away without acquiring native coins to pay for gas. You won't need to go to an exchange, pass KYC checks, enter a lot of details only to buy a random amount of coins you did not think you needed.
             
@@ -51,8 +51,8 @@ block content
 
           .work__line.right
 
-          .work__item.small-left
 
+          .work__item-nft
             .battery
               .battery__wrap
                 .label battery.ton
@@ -60,9 +60,10 @@ block content
             .work__text
               p You can charge the battery with one tap using in-app purchases, or with TON or stablecoins. Send a few dollars worth of stablecoins or TON to a special address: battery.ton and it will automatically apply charges to your account.
 
+
           .work__line          
 
-          .work__item
+          .work__item-unstake
             .work__img
               img(src="@img/howitwork/work-unstake.png", alt="Send Tokens image")
 
@@ -70,6 +71,7 @@ block content
               p With Tonkeeper Battery you will never have to worry about gas anymore. Top up your battery with a banking card or a stablecoin, and use all features of your wallet right away.
 
               p Tonkeeper Battery is denominated in charges, each charge covers the fee of a simple TON transfer transaction. More complex transactions may consume 5, 10 or more charges.
+          
 
     section.download
       .container

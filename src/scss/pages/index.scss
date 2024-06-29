@@ -160,7 +160,228 @@
                 position: relative;
                 margin-top: 40px;
     
-                .work__item {
+                .work__item-send {
+                    display: flex;
+                    height: 300px;
+                    margin-top: 70px;
+
+                    @media (max-width: $screenM) {
+                        display: block;
+                        height: auto;
+                        margin-top: 200px;
+                    }
+
+                    .work__img {
+                        background-color: #fff;
+                        border-radius: 44px 0 0 44px;
+
+                        @media (max-width: $screenM) {
+                            height: 176px;
+                        }
+
+                        @media (max-width: $screenM) {
+                            border-radius: 44px 44px 0 0;
+                        }
+
+                        img {
+                            padding: 45px 64px 0 60px;
+
+                            &.send {
+                                @media (max-width: $screenM) {
+                                    padding: 0;
+                                    width: 111px;
+                                    margin-top: 20px;
+                                    margin-left: 140px;
+                                }
+                            }
+
+                            &.swap {
+                                @media (max-width: $screenM) {
+                                    
+                                }
+                            }
+
+                            &.nft {
+                                @media (max-width: $screenM) {
+                                    padding: 0;
+                                    width: 111px;
+                                    margin-top: 20px;
+                                    margin-left: 140px;
+                                }
+                            }
+
+                            &.unstake {
+                                @media (max-width: $screenM) {
+                                    padding: 0;
+                                    width: 111px;
+                                    margin-top: 20px;
+                                    margin-left: 140px;
+                                }
+                            }
+                        }
+                    }
+                    
+                    .work__text {
+                        background-color: #1D2633;
+                        border-radius: 0 44px 44px 0;
+                        padding: 54px 88px 54px 54px;
+
+                        @media (max-width: $screenM) {
+                            border-radius: 0 0 44px 44px;
+                            padding: 34px 38px 24px 34px;
+                        }
+
+                        p {
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 1.2;
+                            color: #8994a3;
+
+                            @media (max-width: $screenM) {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+
+                .work__item-swap {
+                    display: flex;
+                    height: 230px;
+                    margin-top: 70px;
+
+                    @media (max-width: $screenM) {
+                        display: block;
+                        height: auto;
+                        margin-top: 200px;
+                    }
+
+                    .work__img {
+                        background-color: #fff;
+                        border-radius: 0 44px 44px 0;
+
+                        @media (max-width: $screenM) {
+                            height: 176px;
+                        }
+
+                        @media (max-width: $screenM) {
+                            border-radius: 44px 44px 0 0;
+                        }
+
+                        img {
+                            padding: 65px 64px 0 60px;
+                        }
+                    }
+
+                    .work__text {
+                        background-color: #1D2633;
+                        border-radius: 44px 0 0 44px;
+                        padding: 54px 88px 54px 54px;
+
+                        @media (max-width: $screenM) {
+                            border-radius: 0 0 44px 44px;
+                            padding: 34px 38px 24px 34px;
+                        }
+
+                        p {
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 1.4;
+                            color: #8994a3;
+
+                            @media (max-width: $screenM) {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+
+                .work__item-nft {
+                    display: flex;
+                    height: 200px;
+                    margin-top: 70px;
+                    background-color: #1D2633;
+                    border-radius: 44px;
+
+                    @media (max-width: $screenM) {
+                        display: block;
+                        height: auto;
+                        margin-top: 200px;
+                    }
+
+                    .work__img {
+                        img {
+                            padding: 65px 20px 0 40px;
+                        }
+                    }
+
+                    .battery {
+                        display: flex;
+                        flex-direction: column;
+                        padding-top: 60px;
+                        padding-left: 20px;
+
+                        .battery__wrap {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: row;
+                            position: relative;
+
+                            &:before {
+                                width: calc(100% - 60px);
+                                bottom: -18px;
+                                background-color: #1c6341;
+                            }
+
+                            &:after {
+                                width: calc(100% - 20px);
+                                bottom: -10px;
+                                background-color: #298d5d;
+                            }
+                            
+                            &:after, &:before {
+                                height: 100%;
+                                position: absolute;
+                                content: "";
+                                border-radius: 14px;
+                                z-index: 0;
+                            }
+
+                            .label {
+                                flex: 1 1;
+                                z-index: 1;
+                                font-size: 34px;
+                                font-weight: 700;
+                                line-height: 64px;
+                                flex-direction: row;
+                                text-align: center;
+                                padding: 1px 40px 1px;
+                                border-radius: 14px;
+                                color: #fff;
+                                background: linear-gradient(0deg,#39CD83,#298d5d);;
+                            }
+                        }
+                    }
+                    
+                    .work__text {
+                        background-color: #1D2633;
+                        border-radius: 0 44px 44px 0;
+                        padding: 54px 88px 54px 24px;
+
+                        p {
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 1.2;
+                            color: #8994a3;
+
+                            @media (max-width: $screenM) {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+
+                .work__item-unstake {
                     display: flex;
                     height: 300px;
                     margin-top: 70px;
@@ -221,55 +442,6 @@
                         }
                     }
 
-                    .battery {
-                        display: flex;
-                        flex-direction: column;
-                        padding-top: 60px;
-                        padding-left: 20px;
-
-                        .battery__wrap {
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            flex-direction: row;
-                            position: relative;
-
-                            &:before {
-                                width: calc(100% - 60px);
-                                bottom: -18px;
-                                background-color: #1c6341;
-                            }
-
-                            &:after {
-                                width: calc(100% - 20px);
-                                bottom: -10px;
-                                background-color: #298d5d;
-                            }
-                            
-                            &:after, &:before {
-                                height: 100%;
-                                position: absolute;
-                                content: "";
-                                border-radius: 14px;
-                                z-index: 0;
-                            }
-
-                            .label {
-                                flex: 1 1;
-                                z-index: 1;
-                                font-size: 34px;
-                                font-weight: 700;
-                                line-height: 64px;
-                                flex-direction: row;
-                                text-align: center;
-                                padding: 1px 40px 1px;
-                                border-radius: 14px;
-                                color: #fff;
-                                background: linear-gradient(0deg,#39CD83,#298d5d);;
-                            }
-                        }
-                    }
-                    
                     .work__text {
                         background-color: #1D2633;
                         border-radius: 0 44px 44px 0;
@@ -291,59 +463,6 @@
                             }
                         }
                     }
-
-                    &.small-right {
-                        height: 230px;
-
-                        .work__img {
-                            background-color: #fff;
-                            border-radius: 0 44px 44px 0;
-
-                            @media (max-width: $screenM) {
-                                border-radius: 0 0 44px 44px;
-                            }
-    
-                            img {
-                                padding: 65px 64px 0 60px;
-                            }
-                        }
-
-                        .work__text {
-                            border-radius: 44px 0 0 44px;
-
-                            @media (max-width: $screenM) {
-                                border-radius: 44px 44px 0 0;
-                            }
-
-                            p {
-                                line-height: 1.4;
-                            }
-                        }
-                    }
-
-                    &.small-left {
-                        height: 200px;
-                        background-color: #1D2633;
-                        border-radius: 44px;
-
-                        .work__img {
-                            background-color: transparent;
-    
-                            img {
-                                padding: 65px 20px 0 40px;
-                            }
-                        }
-
-                        .work__text {
-                            padding: 64px 50px 54px 24px;
-
-                            p {
-                                line-height: 1.3;
-                            }
-                        }
-                    }
-    
-                    
                 }
     
                 .work__line {
