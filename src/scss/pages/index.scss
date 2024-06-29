@@ -184,6 +184,10 @@
                             height: 275px;
                         }
 
+                        @media (max-width: 1280px) {
+                            height: 375px;
+                        }
+
                         img {
                             padding: 45px 64px 0 60px;
 
@@ -270,7 +274,6 @@
                     margin-top: 70px;
 
                     @media (max-width: 1050px) {
-                        // display: block;
                         display: none;
                         height: auto;
                         margin-top: 30px;
