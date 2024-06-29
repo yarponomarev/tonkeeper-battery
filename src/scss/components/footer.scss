@@ -5,29 +5,76 @@ footer {
         margin-top: 66px;
         margin-bottom: 70px;
 
+        @media (max-width: $screenM) {
+            margin-top: 30px;
+            padding: 0px 24px;
+        }
+
         .footer__top {
             display: flex;
-            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+            gap: 24px;
 
             @media (max-width: $screenM) {
-                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 32px;
             }
 
-            .top__item {
-                .item__title {
-                    font-weight: 500;
-                    font-size: 16px;
-                    color: #fff;
+            .footer__top-wrap {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                flex: 1 1;
+                gap: 24px;
+
+                @media (max-width: $screenM) {
+                    flex-wrap: wrap;
                 }
 
-                .item__link {
-                    font-weight: 500;
-                    font-size: 16px;
-                    color: #8994a3;
+                .top__item {
+                    display: flex;
+                    flex-direction: column;
+                    flex: 1 1;
+                    gap: 10px;
 
-                    &:not(:first-child) {
-                        margin-top: 10px;
+                    @media (max-width: $screenM) {
+                        min-width: calc(50% - 12px);
                     }
+    
+                    .item__title {
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: #fff;
+                    }
+    
+                    .item__link {
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: #8994a3;
+
+                        display: flex;
+                        flex-direction: column;
+                    }
+    
+                    img {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        width: 200px;
+                    }
+                }
+            }
+
+            .top__item-image {
+                img {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    width: 200px;
                 }
             }
         }
@@ -40,6 +87,10 @@ footer {
                 font-weight: 500;
                 font-size: 16px;
 
+                @media (max-width: $screenM) {
+                    flex-wrap: wrap;
+                }
+
                 .rights {
                     color: #fff;
                 }
@@ -47,6 +98,10 @@ footer {
                 .trademarks {
                     margin-left: 5px;
                     color: #8994a3;
+
+                    @media (max-width: $screenM) {
+                        margin-left: 0;
+                    }
                 }
             }
         }
