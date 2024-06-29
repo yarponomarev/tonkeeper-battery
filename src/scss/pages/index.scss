@@ -185,7 +185,7 @@
                         }
 
                         @media (max-width: 1280px) {
-                            height: 375px;
+                            height: 345px;
                         }
 
                         img {
@@ -195,6 +195,10 @@
                                 width: 180px;
                                 margin-top: 20px;
                                 padding: 0;
+                            }
+
+                            @media (max-width: 1280px) {
+                                padding: 90px 64px 0 60px;
                             }
                         }
                     }
@@ -442,11 +446,19 @@
                             border-radius: 44px 44px 0 0;
                         }
 
+                        @media (max-width: 1280px) {
+                            height: 320px;
+                        }
+
                         img {
                             padding: 45px 64px 0 60px;
 
                             @media (max-width: 1050px) {
                                 width: 305px;
+                            }
+
+                            @media (max-width: 1280px) {
+                                padding: 65px 64px 0 60px;
                             }
                         }
                     }
