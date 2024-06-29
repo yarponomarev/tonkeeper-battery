@@ -87,7 +87,6 @@
 
                 @media (max-width: $screenM) {
                     flex-wrap: wrap;
-                    justify-content: left;
                 }
     
                 .button__link {
@@ -122,6 +121,8 @@
 
                     @media (max-width: $screenM) {
                         margin-top: 10px;
+                        font-size: 16px;
+                        padding: 14px 0;
                     }
 
                     &:not(:first-child) {
@@ -152,7 +153,6 @@
 
                 @media (max-width: $screenM) {
                     font-size: 32px;
-                    text-align: left;
                 }
             }
     
@@ -166,71 +166,57 @@
                     margin-top: 70px;
 
                     @media (max-width: $screenM) {
-                        height: 342px;
-                        margin-bottom: 1000px;
-                    }
-
-                    @media (max-width: $screenM) {
                         display: block;
-                        margin-top: 40px;
+                        height: auto;
+                        margin-top: 200px;
                     }
 
-                    &.small-right {
-                        height: 230px;
-
-                        .work__img {
-                            background-color: #fff;
-                            border-radius: 0 44px 44px 0;
-    
-                            img {
-                                padding: 65px 64px 0 60px;
-                            }
-                        }
-
-                        .work__text {
-                            border-radius: 44px 0 0 44px;
-
-                            p {
-                                line-height: 1.4;
-                            }
-                        }
-                    }
-
-                    &.small-left {
-                        height: 200px;
-                        background-color: #1D2633;
-                        border-radius: 44px;
-
-                        .work__img {
-                            background-color: transparent;
-    
-                            img {
-                                padding: 65px 20px 0 40px;
-                            }
-                        }
-
-                        .work__text {
-                            padding: 64px 50px 54px 24px;
-
-                            p {
-                                line-height: 1.3;
-                            }
-                        }
-                    }
-    
                     .work__img {
                         background-color: #fff;
                         border-radius: 44px 0 0 44px;
 
                         @media (max-width: $screenM) {
+                            height: 176px;
+                        }
+
+                        @media (max-width: $screenM) {
                             border-radius: 44px 44px 0 0;
                         }
-    
+
                         img {
                             padding: 45px 64px 0 60px;
 
-                            @media (max-width: $screenM) {
-                                padding: 35px 0 0 85px;
+                            &.send {
+                                @media (max-width: $screenM) {
+                                    padding: 0;
+                                    width: 111px;
+                                    margin-top: 20px;
+                                    margin-left: 140px;
+                                }
+                            }
+
+                            &.swap {
+                                @media (max-width: $screenM) {
+                                    
+                                }
+                            }
+
+                            &.nft {
+                                @media (max-width: $screenM) {
+                                    padding: 0;
+                                    width: 111px;
+                                    margin-top: 20px;
+                                    margin-left: 140px;
+                                }
+                            }
+
+                            &.unstake {
+                                @media (max-width: $screenM) {
+                                    padding: 0;
+                                    width: 111px;
+                                    margin-top: 20px;
+                                    margin-left: 140px;
+                                }
                             }
                         }
                     }
@@ -305,6 +291,59 @@
                             }
                         }
                     }
+
+                    &.small-right {
+                        height: 230px;
+
+                        .work__img {
+                            background-color: #fff;
+                            border-radius: 0 44px 44px 0;
+
+                            @media (max-width: $screenM) {
+                                border-radius: 0 0 44px 44px;
+                            }
+    
+                            img {
+                                padding: 65px 64px 0 60px;
+                            }
+                        }
+
+                        .work__text {
+                            border-radius: 44px 0 0 44px;
+
+                            @media (max-width: $screenM) {
+                                border-radius: 44px 44px 0 0;
+                            }
+
+                            p {
+                                line-height: 1.4;
+                            }
+                        }
+                    }
+
+                    &.small-left {
+                        height: 200px;
+                        background-color: #1D2633;
+                        border-radius: 44px;
+
+                        .work__img {
+                            background-color: transparent;
+    
+                            img {
+                                padding: 65px 20px 0 40px;
+                            }
+                        }
+
+                        .work__text {
+                            padding: 64px 50px 54px 24px;
+
+                            p {
+                                line-height: 1.3;
+                            }
+                        }
+                    }
+    
+                    
                 }
     
                 .work__line {
@@ -313,6 +352,10 @@
                     width: 15px;
                     height: 70px;
                     margin-left: 170px;
+
+                    @media (max-width: $screenM) {
+                        display: none;
+                    }
 
                     &.right {
                         right: 0;
@@ -359,6 +402,7 @@
 
                     @media (max-width: $screenM) {
                         width: 100%;
+                        justify-content: center;
                     }
 
                     &:not(:first-child) {
@@ -388,7 +432,7 @@
 
                 .dropdown__link {
                     position: relative;
-                    display: inline-block;
+                    display: block;
                     margin-left: 16px;
                     background-color: #fff;
                     border-radius: 100px;
@@ -410,6 +454,10 @@
                     .dropdown__link-wrap {
                         display: flex;
                         align-items: center;
+
+                        @media (max-width: $screenM) {
+                            justify-content: center;
+                        }
 
                         span {
                             margin-left: 10px;

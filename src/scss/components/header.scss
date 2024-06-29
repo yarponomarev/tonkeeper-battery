@@ -40,6 +40,7 @@ header {
             display: none;
             background: none;
             border: none;
+            margin-right: 10px;
 
             @media (max-width: $screenM) {
                 display: block;
@@ -66,12 +67,12 @@ header {
 	right: 0;
 	bottom: 0;
 	z-index: 1000;
-	background-color: rgba(0,0,0, 0.5);
+	background-color: transparent;
 	cursor: pointer;
 	overflow-y: auto;
 	overflow-x: hidden;
 	text-align: center;
-	opacity: 0;
+    display: none;
 	visibility: hidden;
 	transition: opacity var(--transition-time), visibility var(--transition-time);
 
@@ -83,28 +84,44 @@ header {
     }
 
     &.is-open {
-        opacity: 1;
+        display: block;
         visibility: visible;
         transition: opacity var(--transition-time), visibility var(--transition-time);
     }
 
     .modal__container {
-        position: relative;
-        width: 1000px;
-        margin: 50px auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 16px;
+        width: 157px;
+        height: 256px;
+        margin-top: 30px;
+        margin-right: 20px;
+        padding: 20px;
         display: none;
-        vertical-align: middle;
-        background-color: #fff;
+        background-color: #1d2633;
         border-radius: 20px;
         cursor: default;
         text-align: left;
-    
-        @media (max-width: 1024px) {
-            width: 90%;
-        }
 
+        .modal__content {
+            ul {
+                li {
+                    &:not(:first-child) {
+                        margin-top: 24px;
+                    }
+                    a {
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    
         &.modal-open {
-            display: inline-block;
+            display: block;
         }
     }
 }
@@ -129,10 +146,6 @@ header {
         transform: translateY(0);
         transition: opacity var(--transition-time), transform var(--transition-time);
     }
-}
-
-*:focus {
-	outline: 3px red solid;
 }
 
 .content {
