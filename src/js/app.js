@@ -4,6 +4,6 @@ import * as flsFunctions from "./modules/functions.js";
 flsFunctions.isWebp();
 
 /* Плавная прокрутка */
-import * as mySmoothLinks from "./modules/functions.js";
+import * as myModal from "./modules/functions.js";
 
-mySmoothLinks.SmoothLinks();
+myModal.Modal();

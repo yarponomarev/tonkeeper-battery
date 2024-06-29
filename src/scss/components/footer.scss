@@ -9,6 +9,10 @@ footer {
             display: flex;
             justify-content: space-between;
 
+            @media (max-width: $screenM) {
+                flex-wrap: wrap;
+            }
+
             .top__item {
                 .item__title {
                     font-weight: 500;

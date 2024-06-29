@@ -3,24 +3,148 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
     
     .container {
         margin-top: 40px;
 
         .header__nav {
-            display: flex;
-            justify-content: center;
+            @media (max-width: $screenM) {
+                display: flex;
+                justify-content: right;
+            }
 
-            .nav__item {
-                &:not(:first-child) {
-                    margin-left: 38px;
+            .nav__list {
+                display: flex;
+                justify-content: center;
+
+                @media (max-width: $screenM) {
+                    display: none;
                 }
 
-                .nav__link {
-                    color: #fff;
+                .nav__item {
+                    &:not(:first-child) {
+                        margin-left: 38px;
+                    }
+    
+                    .nav__link {
+                        font-weight: 600;
+                        font-size: 16px;
+                        text-align: center;
+                        color: rgba(255, 255, 255, 0.75);
+                    }
+                }
+            }
+        }
+
+        .burger {
+            display: none;
+            background: none;
+            border: none;
+
+            @media (max-width: $screenM) {
+                display: block;
+            }
+
+            .span {
+                width: 20px;
+                height: 2px;
+                background-color: #fff;
+
+                &:not(:first-child) {
+                    margin-top: 7px;
                 }
             }
         }
     }
+}
+
+.modal {
+	--transition-time: 0.3s;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1000;
+	background-color: rgba(0,0,0, 0.5);
+	cursor: pointer;
+	overflow-y: auto;
+	overflow-x: hidden;
+	text-align: center;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity var(--transition-time), visibility var(--transition-time);
+
+    &::before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+    }
+
+    &.is-open {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity var(--transition-time), visibility var(--transition-time);
+    }
+
+    .modal__container {
+        position: relative;
+        width: 1000px;
+        margin: 50px auto;
+        display: none;
+        vertical-align: middle;
+        background-color: #fff;
+        border-radius: 20px;
+        cursor: default;
+        text-align: left;
+    
+        @media (max-width: 1024px) {
+            width: 90%;
+        }
+
+        &.modal-open {
+            display: inline-block;
+        }
+    }
+}
+
+.fade {
+	opacity: 0;
+	transition: opacity var(--transition-time);
+
+    &.animate-open {
+        opacity: 1;
+        transition: opacity var(--transition-time);
+    }
+}
+
+.fadeInUp {
+	opacity: 0;
+	transform: translateY(-100px);
+	transition: opacity var(--transition-time), transform var(--transition-time);
+
+    &.animate-open {
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity var(--transition-time), transform var(--transition-time);
+    }
+}
+
+*:focus {
+	outline: 3px red solid;
+}
+
+.content {
+	min-height: 200vh;
+}
+
+.disable-scroll {
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
 }
