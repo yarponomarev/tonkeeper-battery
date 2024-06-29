@@ -149,10 +149,6 @@
         margin-top: 40px;
     
         .container {
-            @media (max-width: $screenM) {
-                margin: 0px 12px;
-            }
-
             h2 {
                 font-weight: 700;
                 font-size: 44px;
@@ -173,7 +169,7 @@
                     height: auto;
                     margin-top: 40px;
 
-                    @media (max-width: $screenM) {
+                    @media (max-width: 1050px) {
                         display: block;
                     }
 
@@ -183,7 +179,7 @@
                         text-align: center;
                         height: 300px;
 
-                        @media (max-width: $screenM) {
+                        @media (max-width: 1050px) {
                             border-radius: 44px 44px 0 0;
                             height: 275px;
                         }
@@ -191,7 +187,7 @@
                         img {
                             padding: 45px 64px 0 60px;
 
-                            @media (max-width: $screenM) {
+                            @media (max-width: 1050px) {
                                 width: 180px;
                                 margin-top: 20px;
                                 padding: 0;
@@ -204,7 +200,7 @@
                         border-radius: 0 44px 44px 0;
                         padding: 54px 88px 54px 54px;
 
-                        @media (max-width: $screenM) {
+                        @media (max-width: 1050px) {
                             border-radius: 0 0 44px 44px;
                             padding: 34px 38px 24px 34px;
                         }
@@ -215,7 +211,7 @@
                             line-height: 1.2;
                             color: #8994a3;
 
-                            @media (max-width: $screenM) {
+                            @media (max-width: 1050px) {
                                 font-size: 16px;
                             }
                         }
@@ -227,7 +223,7 @@
                     height: auto;
                     margin-top: 70px;
 
-                    @media (max-width: $screenM) {
+                    @media (max-width: 1050px) {
                         display: block;
                         height: auto;
                         margin-top: 30px;
@@ -241,7 +237,7 @@
                         img {
                             padding: 65px 64px 0 60px;
 
-                            @media (max-width: $screenM) {
+                            @media (max-width: 1050px) {
                                 width: 186px;
                                 margin-top: 40px;
                                 margin-bottom: 20px;
@@ -261,7 +257,7 @@
                             line-height: 1.4;
                             color: #8994a3;
 
-                            @media (max-width: $screenM) {
+                            @media (max-width: 1050px) {
                                 font-size: 16px;
                             }
                         }
@@ -273,7 +269,7 @@
                     height: auto;
                     margin-top: 70px;
 
-                    @media (max-width: $screenM) {
+                    @media (max-width: 1050px) {
                         // display: block;
                         display: none;
                         height: auto;
@@ -285,7 +281,7 @@
                         border-radius: 0 44px 44px 0;
                         text-align: center;
 
-                        @media (max-width: $screenM) {
+                        @media (max-width: 1050px) {
                             border-radius: 0 0 44px 44px;
                             height: 200px;
                         }
@@ -293,7 +289,7 @@
                         img {
                             padding: 55px 64px 0px 60px;
 
-                            @media (max-width: $screenM) {
+                            @media (max-width: 1050px) {
                                 width: 186px;
                                 margin-top: 50px;
                                 padding: 0;
@@ -306,7 +302,7 @@
                         border-radius: 44px 0 0 44px;
                         padding: 54px 88px 54px 54px;
 
-                        @media (max-width: $screenM) {
+                        @media (max-width: 1050px) {
                             border-radius: 44px 44px 0 0;
                             padding: 34px 38px 24px 34px;
                         }
@@ -317,7 +313,7 @@
                             line-height: 1.4;
                             color: #8994a3;
 
-                            @media (max-width: $screenM) {
+                            @media (max-width: 1050px) {
                                 font-size: 16px;
                             }
                         }
@@ -331,7 +327,7 @@
                     border-radius: 44px;
                     margin-top: 70px;
                     
-                    @media (max-width: $screenM) {
+                    @media (max-width: 1050px) {
                         display: block;
                         height: auto;
                         margin-top: 30px;
@@ -349,7 +345,7 @@
                         padding-top: 60px;
                         padding-left: 20px;
 
-                        @media (max-width: $screenM) {
+                        @media (max-width: 1050px) {
                             padding-right: 20px;
                         }
 
@@ -393,7 +389,7 @@
                                 color: #fff;
                                 background: linear-gradient(0deg,#39CD83,#298d5d);
 
-                                @media (max-width: $screenM) {
+                                @media (max-width: 1050px) {
                                     font-size: 28px;
                                 }
                             }
@@ -405,7 +401,7 @@
                         border-radius: 0 0 44px 44px;
                         padding: 54px 88px 54px 24px;
 
-                        @media (max-width: $screenM) {
+                        @media (max-width: 1050px) {
                             padding: 44px 28px 34px 24px;
                         }
 
@@ -415,7 +411,7 @@
                             line-height: 1.2;
                             color: #8994a3;
 
-                            @media (max-width: $screenM) {
+                            @media (max-width: 1050px) {
                                 font-size: 16px;
                             }
                         }
@@ -427,7 +423,7 @@
                     height: auto;
                     margin-top: 70px;
 
-                    @media (max-width: $screenM) {
+                    @media (max-width: 1050px) {
                         display: block;
                         height: auto;
                         margin-top: 30px;
@@ -439,14 +435,14 @@
                         height: 300px;
                         text-align: center;
 
-                        @media (max-width: $screenM) {
+                        @media (max-width: 1050px) {
                             border-radius: 44px 44px 0 0;
                         }
 
                         img {
                             padding: 45px 64px 0 60px;
 
-                            @media (max-width: $screenM) {
+                            @media (max-width: 1050px) {
                                 width: 305px;
                             }
                         }
@@ -457,7 +453,7 @@
                         border-radius: 0 44px 44px 0;
                         padding: 54px 88px 54px 54px;
 
-                        @media (max-width: $screenM) {
+                        @media (max-width: 1050px) {
                             border-radius: 0 0 44px 44px;
                             padding: 34px 38px 24px 34px;
                         }
@@ -468,7 +464,7 @@
                             line-height: 1.2;
                             color: #8994a3;
 
-                            @media (max-width: $screenM) {
+                            @media (max-width: 1050px) {
                                 font-size: 16px;
                             }
                         }
@@ -482,7 +478,7 @@
                     height: 70px;
                     margin-left: 170px;
 
-                    @media (max-width: $screenM) {
+                    @media (max-width: 1050px) {
                         display: none;
                     }
 
@@ -504,10 +500,6 @@
         margin-top: 60px;
 
         .container {
-            @media (max-width: $screenM) {
-                margin: 0px 12px;
-            }
-
             p {
                 max-width: 500px;
                 margin: auto;
@@ -522,7 +514,7 @@
                 display: flex;
                 justify-content: center;
 
-                @media (max-width: $screenM) {
+                @media (max-width: 1280px) {
                     flex-wrap: wrap;
                 }
 
@@ -539,7 +531,7 @@
                         background: #c4ccd9;
                     }
 
-                    @media (max-width: $screenM) {
+                    @media (max-width: 1280px) {
                         width: 100%;
                         justify-content: center;
                     }
@@ -547,7 +539,7 @@
                     &:not(:first-child) {
                         margin-left: 16px;
 
-                        @media (max-width: $screenM) {
+                        @media (max-width: 1280px) {
                             margin-left: 0;
                             margin-top: 10px;
                         }
@@ -583,7 +575,7 @@
                         background: #c4ccd9;
                     }
 
-                    @media (max-width: $screenM) {
+                    @media (max-width: 1280px) {
                         width: 100%;
                         margin-left: 0;
                         margin-top: 10px;
@@ -600,7 +592,7 @@
                         display: flex;
                         align-items: center;
 
-                        @media (max-width: $screenM) {
+                        @media (max-width: 1280px) {
                             justify-content: center;
                         }
 
@@ -670,7 +662,7 @@
                     display: flex;
                     justify-content: center;
 
-                    @media (max-width: $screenM) {
+                    @media (max-width: 1280px) {
                         flex-wrap: wrap;
                     }
 
